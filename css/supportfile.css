@@ -6,8 +6,8 @@
     --darker-value: 0.9;
 
     /*Colors*/
-    --deep-purple: #4f004f;
-    --off-white: #f1f1f1;
+    --deep-purple: #250025;
+    --off-white: #f8f8f8;
 
     /*Font details*/
     --bold-font: 700;
@@ -20,6 +20,7 @@
     --mini-spacing: 3px;
     --small-spacing: 5px;
     --medium-spacing: 10px;
+    --large-spacing: 20px;
 
     /*Horrible hover spacing stuff*/
     --hover-widen-valude: 1px;

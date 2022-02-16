@@ -1,14 +1,15 @@
 .btn
 {
-    font-family: inherit;
     background-color: var(--deep-purple);
+    border: 0;
     border-radius: var(--medium-spacing);
     color: var(--off-white);
+    font-family: inherit;
+    font-size: var(--regular-font);
+    font-weight: var(--bold-font);
     padding: var(--mini-spacing) var(--small-spacing);
     text-decoration: none;
     transition: 0.2s;
-    border: 0;
-    font-size: var(--regular-font);
 }
 
 .btn:hover
