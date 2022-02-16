@@ -1,0 +1,6 @@
+footer{
+    color: var(--deep-purple);
+    font-style: italic;
+    font-weight: var(--bold-font);
+    text-align: center;
+}

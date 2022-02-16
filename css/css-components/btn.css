@@ -1,0 +1,23 @@
+.btn
+{
+    font-family: inherit;
+    background-color: var(--deep-purple);
+    border-radius: var(--medium-spacing);
+    color: var(--off-white);
+    padding: var(--mini-spacing) var(--small-spacing);
+    text-decoration: none;
+    transition: 0.2s;
+    border: 0;
+    font-size: var(--regular-font);
+}
+
+.btn:hover
+{
+    filter: brightness(var(--brighter-value));
+    padding: var(--mini-spacing) var(--small-hover-widener)
+}
+
+.btn:active
+{
+    filter:brightness(var(--darker-value))
+}

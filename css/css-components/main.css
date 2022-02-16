@@ -1,0 +1,4 @@
+main h3{
+    font-size: var(--larger-font);
+    color: var(--deep-purple);
+}
