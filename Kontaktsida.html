@@ -8,24 +8,26 @@
     <link rel="stylesheet" href="css/emailform.css">
 </head>
 <body>
-    <header>
+    <header class="siteheader">
         <picture>
             <img src="Logo.png" alt="" width="300px">
         </picture>
+
+        <nav>
+            <ul class="sitenav">
+                <li><a class ="btn navitem" href="Startsida.html">Start</a></li>
+                <li><a class ="btn navitem" href="Nyhetssida.html">Nyheter</a></li>
+                <li><a class ="btn navitem" href="Kontaktsida.html">Kontakt</a></li>
+                <li><a class ="btn navitem" href="Privacysida.html">Privacy</a></li>
+            </ul>
+        </nav>
     </header>
-    <nav>
-        <ul>
-            <li><a class ="btn" href="Startsida.html">Start</a></li>
-            <li><a class ="btn" href="Nyhetssida.html">Nyheter</a></li>
-            <li><a class ="btn" href="Kontaktsida.html">Kontakt</a></li>
-            <li><a class ="btn" href="Privacysida.html">Privacy</a></li>
-        </ul>
-    </nav>
+    
     <main>
         <h3>
             Kontaktformulär
         </h3>
-        <form action="https://formshow.systementor.se" method="post">
+        <form action="https://formshow.systementor.se" method="post" class="emailform">
             <input class="textinput" type="text" name="Name" placeholder="Ditt namn">
             <input class="textinput" type="email" name="Email" placeholder="E-post">
             <input class="textinput" type="text" name="Subject" placeholder="Ärende">
