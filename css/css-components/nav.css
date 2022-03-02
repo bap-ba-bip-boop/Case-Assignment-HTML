@@ -1,5 +1,11 @@
 @import "btn.css";
 
 li{
-    margin: var(--medium-spacing);
+    margin: var(--small-spacing);
+}
+
+.navmenu{
+    display:flex;
+    list-style: none;
+    gap: 10px;
 }

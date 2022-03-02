@@ -1,10 +1,68 @@
 @import "/css/override.css";
 @import "/css/supportfile.css";
-@import "/css/css-components/nav.css";
-@import "/css/css-components/main.css";
-@import "/css/css-components/footer.css";
+@import "/css/css-components/btn.css";
 
 body
 {
     font-family: 'Ubuntu', sans-serif;
+}
+
+.navmenu li{
+    margin: var(--small-spacing);
+}
+
+.navmenu{
+    list-style: none;
+    gap: var(--medium-spacing);
+    justify-items: left;
+}
+
+.sitenav{
+    grid-area: nav;
+}
+
+.sitemain{
+    color: var(--deep-purple);
+    grid-area: main;
+}
+
+h3{
+    margin-left: var(--large-spacing);
+    font-size: var(--larger-font);
+}
+
+h4 {
+    margin-top: var(--medium-spacing);
+    
+}
+
+p{
+    font-size: var(--regular-font);
+}
+
+.sitefooter{
+    color: var(--deep-purple);
+    font-style: italic;
+    font-weight: var(--bold-font);
+    grid-area: footer;
+
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+
+.container{
+    display: grid;
+    grid-template-areas:
+    "header header"
+    "nav main"
+    "footer footer";
+    grid-template-rows: 50px 6fr 50px;
+    grid-template-columns: 1fr 6fr;
+    width: 100vw;
+    height: 100vh;
+}
+
+.siteheader{
+    grid-area: header;
 }
