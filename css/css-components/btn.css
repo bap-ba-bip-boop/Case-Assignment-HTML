@@ -9,13 +9,15 @@
     font-weight: var(--bold-font);
     padding: var(--mini-spacing) var(--small-spacing);
     text-decoration: none;
-    transition: 0.2s;
+    display: inline-block;
 }
 
 .btn:hover
 {
+    transition: 0.2s;
     filter: brightness(var(--brighter-value));
-    padding: var(--mini-spacing) var(--small-hover-widener)
+    padding: var(--mini-spacing) var(--small-hover-widener);
+    font-size: 17px;
 }
 
 .btn:active
