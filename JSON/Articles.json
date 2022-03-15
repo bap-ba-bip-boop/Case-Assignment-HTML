@@ -1,0 +1,215 @@
+[
+    {
+        "id": 0,
+        "date": "2018-05-13T00:00:00-00:00", 
+        "title" : "",
+        "author" : "",
+        "summary": "",
+        "content" :[
+            {
+                "type": "h3",
+                "text": "Warmking AB's Generic Privacy Policy"
+            },
+            {
+                "type": "p",
+                "text": "This privacy policy (\"policy\") will help you understand how Warmking AB (\"us\", \"we\", \"our\") uses and protects the data you provide to us when you visit and use Warmaking.su (\"website\", \"service\"). We reserve the right to change this policy at any given time, of which you will be promptly updated. If you want to make sure that you are up to date with the latest changes, we advise you to frequently visit this page."
+            },
+            {
+                "type": "h3",
+                "text": "What User Data We Collect"
+            },
+            {
+                "type": "p",
+                "text": "When you visit the website, we may collect the following data:"
+            },
+            {
+                "type": "ul",
+                "items": [
+                    "Your IP address.", 
+                    "Your contact information and email address.", 
+                    "Other information such as interests and preferences.",
+                    "Data profile regarding your online behavior on our website."
+                ]
+            },
+            {
+                "type": "h3",
+                "text": "Why We Collect Your Data"
+            },
+            {
+                "type": "p",
+                "text": "We are collecting your data for several reasons:"
+            },
+            {
+                "type": "ul",
+                "items": [
+                    "To better understand your needs.", 
+                    "To improve our services and products.", 
+                    "To send you promotional emails containing the information we think you will find interesting.",
+                    "To contact you to fill out surveys and participate in other types of market research.",
+                    "To customize our website according to your online behavior and personal preferences."
+                ]
+            },
+            {
+                "type": "h3",
+                "text": "Safeguarding and Securing the Data"
+            },
+            {
+                "type": "p",
+                "text": "Warmking AB is committed to securing your data and keeping it confidential. Warmking AB has done all in its power to prevent data theft, unauthorized access, and disclosure by implementing the latest technologies and software, which help us safeguard all the information we collect online."
+            },
+            {
+                "type": "h3",
+                "text": "Our Cookie Policy"
+            },
+            {
+                "type": "p",
+                "text": "Once you agree to allow our website to use cookies, you also agree to use the data it collects regarding your online behavior (analyze web traffic, web pages you spend the most time on, and websites you visit)."
+            },
+            {
+                "type": "p",
+                "text": "The data we collect by using cookies is used to customize our website to your needs. After we use the data for statistical analysis, the data is completely removed from our systems."
+            },
+            {
+                "type": "p",
+                "text": "Please note that cookies don't allow us to gain control of your computer in any way. They are strictly used to monitor which pages you find useful and which you do not so that we can provide a better experience for you."
+            },
+            {
+                "type": "p",
+                "text": "If you want to disable cookies, you can do it by accessing the settings of your internet browser. (Provide links for cookie settings for major internet browsers)."
+            },
+            {
+                "type": "h3",
+               "text": "Links to Other Websites"
+            },
+            {
+                "type": "p",
+               "text": "Our website contains links that lead to other websites. If you click on these links Warmking AB is not held responsible for your data and privacy protection. Visiting those websites is not governed by this privacy policy agreement. Make sure to read the privacy policy documentation of the website you go to from our website."
+            },
+            {
+                "type": "h3",
+               "text": "Restricting the Collection of your Personal Data"
+            },
+            {
+                "type": "p",
+               "text": "At some point, you might wish to restrict the use and collection of your personal data. You can achieve this by doing the following:"
+            },
+            {
+                "type": "p",
+               "text": "When you are filling the forms on the website, make sure to check if there is a box which you can leave unchecked, if you don't want to disclose your personal information."
+            },
+            {
+                "type": "p",
+               "text": "If you have already agreed to share your information with us, feel free to contact us via email and we will be more than happy to change this for you."
+            },
+            {
+                "type": "p",
+               "text": "Warmking AB will not lease, sell or distribute your personal information to any third parties, unless we have your permission. We might do so if the law forces us. Your personal information will be used when we need to send you promotional materials if you agree to this privacy policy."
+            }
+        ]
+    },
+    {
+        "id": 1,
+        "date": "2022-03-14T00:00:00-00:00", 
+        "title" : "Template Article",
+        "author" : "Carl Bergqvist",
+        "summary": "this is a template article to display the things",
+        "content" :[
+            {
+                "type": "h3",
+                "text": "here is a title"
+            },
+            {
+                "type": "p",
+                "text": "here goes a paragraph"
+            },
+            {
+                "type": "ul",
+                "items": ["here", "is", "a", "unordered", "list"]
+            },
+            {
+                "type": "span",
+                "text": "here"
+            },
+            {
+                "type": "span",
+                "text": "is"
+            },
+            {
+                "type": "span",
+                "text": "4"
+            },
+            {
+                "type": "span",
+                "text": "spans"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "date": "2017-08-13T00:00:00-00:00", 
+        "title" : "Javascript is fun",
+        "author" : "Javascript fan",
+        "summary": "a short article describing how Javascript is fun",
+        "content" :[
+            {
+                "type": "h3",
+                "text": "Javascript is fun"
+            },
+            {
+                "type": "p",
+                "text": "Here is a list on why javascript is fun"
+            },
+            {
+                "type": "ul",
+                "items": ["Named after Java", "comes with VS code", "does wierd things"]
+            }
+        ]
+    },
+    { 
+        "id": 3,
+        "date": "2021-02-17T00:00:00-00:00", 
+        "title" : "Penguins",
+        "author" : "Big Penguin fan",
+        "summary": "An article describing penguins that is not plagarizing wikipedia",
+        "content" :[
+            {
+                "type": "p",
+                "text": "Penguins (order Sphenisciformes /sfɪˈnɪsɪfɔːrmiːz/, family Spheniscidae /sfɪˈnɪsɪdiː/) are a group of aquatic flightless birds. They live almost exclusively in the southern hemisphere: only one species, the Galápagos penguin, is found north of the Equator. Highly adapted for life in the water, penguins have countershaded dark and white plumage and flippers for swimming. Most penguins feed on krill, fish, squid and other forms of sea life which they catch while swimming underwater. They spend roughly half of their lives on land and the other half in the sea."
+            },
+            {
+                "type": "p",
+                "text": "Although almost all penguin species are native to the southern hemisphere, they are not found only in areas with cold climates, such as Antarctica. In fact, only a few species of penguin live that far south. Several species are found in the temperate zone, and one species, the Galápagos penguin, lives near the Equator."
+            },
+            {
+                "type": "p",
+                "text": "The largest living species is the emperor penguin (Aptenodytes forsteri): on average, adults are about 1.1 m (3 ft 7 in) tall and weigh 35 kg (77 lb). The smallest penguin species is the little blue penguin (Eudyptula minor), also known as the fairy penguin, which stands around 33 cm (13 in) tall and weighs 1 kg (2.2 lb). In general today, larger penguins inhabit colder regions, and smaller penguins inhabit regions with temperate or tropical climates. Some prehistoric penguin species were enormous: as tall or heavy as an adult human. There was a great diversity of species in subantarctic regions, and at least one giant species in a region around 2,000 km south of the equator 35 mya, in a climate decidedly warmer than today."
+            }
+        ]
+    },
+    { 
+        "id": 4,
+        "date": "2019-01-21T00:00:00-00:00", 
+        "title" : "Amazing new prices at Warmking",
+        "author" : "PR person at Warmking",
+        "summary": "watch the new and amazing deals here on warmking",
+        "content" :[
+            {
+                "type": "p",
+                "text": "dunno if I'll do the VG part"
+            }
+        ]
+    },
+    { 
+        "id": 5,
+        "date": "2020-06-15T00:00:00-00:00", 
+        "title" : "this is the Fifth Article",
+        "author" : "Programer that ran out of imagination",
+        "summary": "I ran out of imagination and needed a 5th article",
+        "content" :[
+            {
+                "type": "p",
+                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis consequat suscipit tellus, ut condimentum massa elementum quis. Vivamus consectetur accumsan odio finibus sodales. Ut pellentesque massa dolor, in condimentum nisi."
+            }
+        ]
+    }
+]

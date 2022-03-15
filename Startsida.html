@@ -1,41 +1,47 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Warmaking AB | Start</title>
-    <link rel="stylesheet" href="css/gencss.css">
-</head>
-<body class="container">
-    <header class="siteheader">
-        <h1>
-            Warmaking AB
-        </h1>
-    </header>
-    <nav class="sitenav">
-        <ul class="navmenu">
-            <li><a class ="btn" href="Startsida.html">Start</a></li>
-            <li><a class ="btn" href="Nyhetssida.html">Nyheter</a></li>
-            <li><a class ="btn" href="Kontaktsida.html">Kontakt</a></li>
-            <li><a class ="btn" href="Privacysida.html">Privacy</a></li>
-        </ul>
-    </nav>
-    <main class="sitemain">
-        <h3>
-            Välkomen till Warmaking AB
-        </h3>
-        <article>
-            <header>
-                <p>Nytt avtal med bla bla</p>
-            </header>
-            <div>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur culpa animi cumque aliquid, atque non iusto quod odit. Odit, ab?</p>
-                <a href="#">Read more</a>
-            </div>
-        </article>
-    </main>
-    <footer class="sitefooter">
-        <p>&copy; Carl Bergqvist 2022</p>
-    </footer>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Warmking AB</title>
+    </head>
+    <body>
+        <header>
+            <h1>tempHeader</h1>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a id="startNavID" href="#">Start</a></li>
+                <li><a id="privacyNavID" href="#">Privacy</a></li>
+                <li><a id="contactNavID" href="#">Contact</a></li>
+            </ul>
+        </nav>
+
+        <main id="container">
+
+            <section id="startSectionID">
+                <div id="articleSummaryContainerID">
+
+                </div>
+            </section>
+
+            <section id="articleSectionID">
+                <div id="articleContainerID">
+
+                </div>
+            </section>
+
+            <section id="contactSectionID">
+                <form action="https://formshow.systementor.se" method="post" class="emailform">
+                    <input class="textinput" type="text" name="Name" placeholder="Ditt namn">
+                    <input class="textinput" type="email" name="Email" placeholder="E-post">
+                    <input class="textinput" type="text" name="Subject" placeholder="Ärende">
+                    <textarea name="Message" rows="5" cols="30"></textarea>
+                    <input class="btn" type="submit" value="Skicka">
+                </form>
+            </section>
+        </main>
+    </body>
+    <script type="module" src="./script/script.js"></script>
 </html>
