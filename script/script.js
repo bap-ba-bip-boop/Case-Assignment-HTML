@@ -1,12 +1,12 @@
-import {renderArticle, renderArticleSummaries, fetchData} from './articleRender.js'
+import {renderArticle, renderArticleSummaries, fetchData} from './articleRender.js';
+import {startSectionID, articleSectionID} from './CommonSections.js';
 
-const startNavID = document.getElementById("startNavID")
-const privacyNavID = document.getElementById("privacyNavID")
-const contactNavID = document.getElementById("contactNavID")
 
-const startSectionID = document.getElementById("startSectionID")
-const articleSectionID = document.getElementById("articleSectionID")
-const contactSectionID = document.getElementById("contactSectionID")
+const startNavID = document.getElementById("startNavID");
+const privacyNavID = document.getElementById("privacyNavID");
+const contactNavID = document.getElementById("contactNavID");
+
+const contactSectionID = document.getElementById("contactSectionID");
 
 export const setVisible = id =>{
     if(id == "startNavID"){
