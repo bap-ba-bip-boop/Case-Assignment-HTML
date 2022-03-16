@@ -1,11 +1,11 @@
 import { setVisible } from './script.js';
-import {startSectionID, articleSectionID} from './CommonSections.js';
+import { startSectionID, articleSectionID } from './CommonSections.js';
 
 let listOfArticles = [];
 
 const ArticlePath = './JSON/Articles.json';
 
-export const fetchData = () =>{
+export const fetchData = () => {
     fetch(ArticlePath)
         .then(Response => Response.json())
         .then(jsonData => {
@@ -13,131 +13,128 @@ export const fetchData = () =>{
             setVisible("startNavID")
         })
 }
-
-const addPageElement = (type, content, collector) =>{
+const addPageElement = (type, content) => {
     const elem = document.createElement(type);
-    for(const key in content)
-        if(typeof(elem[key]) == 'function')
+    for (const key in content)
+        if (typeof (elem[key]) == 'function')
             elem[key](...content[key]);
         else
             elem[key] = content[key];
-    collector.appendChild(elem)
+    return elem;
 }
 
-export const renderArticle = id =>{
+export const renderArticle = id => {
     articleSectionID.innerHTML = '';
-    const testData = listOfArticles.find( article => article.id == id );
+    const testData = listOfArticles.find(article => article.id == id);
 
-    addPageElement(
-        'h2',
-        {
-            innerHTML: testData.title
-        },
-        articleSectionID
+    articleSectionID.appendChild(
+        addPageElement(
+            'h2',
+            {
+                innerHTML: testData.title
+            }
+        )
     )
 
-    if(testData.author != '')
-    {
-        addPageElement(
-            'span',
-            {
-                innerHTML: 'skriven av:'
-            },
-            articleSectionID
-        )
-        addPageElement(
-            'span',
-            {
-                innerHTML: testData.author
-            },
-            articleSectionID
-        )
-        addPageElement(
-            'p',
-            {
-                innerHTML: testData.date.substring(0, testData.date.indexOf('T'))
-            },
-            articleSectionID
-        )
+    if (testData.author != '') {
+        [
+            [
+                'span',
+                {
+                    innerHTML: 'skriven av:'
+                }
+            ],
+            [
+                'span',
+                {
+                    innerHTML: testData.author
+                }
+            ],
+            [
+                'p',
+                {
+                    innerHTML: testData.date.substring(0, testData.date.indexOf('T'))
+                }
+            ]
+        ].forEach( absDOM => articleSectionID.appendChild( addPageElement(...absDOM) ) )
     }
+    
     testData.content.forEach(contentItem => {
-        if(contentItem.type == 'ul')
-        {
+        if (contentItem.type == 'ul') {
             const item = document.createElement(contentItem.type)
             contentItem.items.forEach(
-                licontent => 
-                addPageElement(
-                    'li',
-                    {
-                        innerHTML: licontent
-                    },
-                    item
-                )
-                )
+                licontent =>
+                    item.appendChild(
+                        addPageElement(
+                            'li',
+                            {
+                                innerHTML: licontent
+                            }
+                        )
+                    )
+            )
             articleSectionID.appendChild(item)
         }
-        else
-        {
-            addPageElement(
-                contentItem.type,
-                {
-                    innerHTML: contentItem.text
-                },
-                articleSectionID
+        else {
+            articleSectionID.appendChild(
+                addPageElement(
+                    contentItem.type,
+                    {
+                        innerHTML: contentItem.text
+                    }
+                )
             )
         }
     });
 }
 
-export const renderArticleSummaries = () =>{
-    startSectionID.innerHTML ='';
-    const listOfSummaries = listOfArticles.map(article => ({title: article.title, date: article.date, id: article.id, summary: article.summary}))
-
-    listOfSummaries.forEach(articleSummary =>
+export const renderArticleSummaries = () => {
+    startSectionID.innerHTML = '';
+    listOfArticles.map(
+        article => ({ title: article.title, date: article.date, id: article.id, summary: article.summary })
+        ).forEach(articleSummary => {
+        if (articleSummary.id != 0)//title, date, summary, id
         {
-            if(articleSummary.id != 0)
-            {
-                const container = document.createElement('div');
-
-                addPageElement(
+            const container = document.createElement('div');
+            
+            [
+                [
                     'h3',
                     {
                         innerHTML: articleSummary.title
-                    },
-                    container
-                )
-                addPageElement(
+                    }
+                ],
+                [
                     'p',
                     {
                         innerHTML: articleSummary.date.substring(0, articleSummary.date.indexOf('T'))
-                    },
-                    container
-                )
-                addPageElement(
+                    }
+                ],
+                [
                     'p',
                     {
                         innerHTML: articleSummary.summary
-                    },
-                    container
-                )
-                addPageElement(
+                    }
+                ],
+                [
                     'a',
                     {
                         innerHTML: "Read More...",
                         href: "#",
                         addEventListener:
-                        [
-                            "click", 
-                            ()=>{
-                                renderArticle(articleSummary.id)
-                                setVisible("privacyNavID")
-                            }
-                        ]
-                    },
-                    container
-                )
-                startSectionID.appendChild(container);
-            }
+                            [
+                                "click",
+                                () => {
+                                    renderArticle(articleSummary.id)
+                                    setVisible("privacyNavID")
+                                }
+                            ]
+                    }
+                ]
+            ].forEach( absDOM => container.appendChild( addPageElement(...absDOM) ) )
+
+            startSectionID.appendChild(container);
         }
+    }
     )
 }
