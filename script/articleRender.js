@@ -58,7 +58,7 @@ export const renderArticle = id => {
             ]
         ].forEach( absDOM => articleSectionID.appendChild( addPageElement(...absDOM) ) )
     }
-    
+
     testData.content.forEach(contentItem => {
         if (contentItem.type == 'ul') {
             const item = document.createElement(contentItem.type)
@@ -96,24 +96,27 @@ export const renderArticleSummaries = () => {
         if (articleSummary.id != 0)//title, date, summary, id
         {
             const container = document.createElement('div');
-            
+            container.classList = 'articleSummaryContainer';
             [
                 [
                     'h3',
                     {
-                        innerHTML: articleSummary.title
+                        innerHTML: articleSummary.title,
+                        classList: 'articleSummaryHeader'
                     }
                 ],
                 [
                     'p',
                     {
-                        innerHTML: articleSummary.date.substring(0, articleSummary.date.indexOf('T'))
+                        innerHTML: articleSummary.date.substring(0, articleSummary.date.indexOf('T')),
+                        classList: 'articleSummaryDate'
                     }
                 ],
                 [
                     'p',
                     {
-                        innerHTML: articleSummary.summary
+                        innerHTML: articleSummary.summary,
+                        classList: 'articleSummaryText'
                     }
                 ],
                 [
@@ -128,11 +131,11 @@ export const renderArticleSummaries = () => {
                                     renderArticle(articleSummary.id)
                                     setVisible("privacyNavID")
                                 }
-                            ]
+                            ],
+                        classList: 'articleSummaryLink'
                     }
                 ]
             ].forEach( absDOM => container.appendChild( addPageElement(...absDOM) ) )
-
             startSectionID.appendChild(container);
         }
     }

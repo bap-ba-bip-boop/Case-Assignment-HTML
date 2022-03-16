@@ -202,7 +202,7 @@
     { 
         "id": 5,
         "date": "2020-06-15T00:00:00-00:00", 
-        "title" : "this is the Fifth Article",
+        "title" : "This is the Fifth Article",
         "author" : "Programer that ran out of imagination",
         "summary": "I ran out of imagination and needed a 5th article",
         "content" :[
