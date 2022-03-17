@@ -4,6 +4,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Warmking AB</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <link rel="stylesheet" href="./css/style.css">
     </head>
     <body class="siteContainer">
@@ -13,9 +14,11 @@
 
         <nav class="siteNav">
             <ul>
+                <li><a class="hamburgerLink" id="HamburgerNavID" href="#"><span class="glyphicon">&#xe236;</span></a></li>
                 <li><a class="navLinks" id="startNavID" href="#">Start</a></li>
                 <li><a class="navLinks" id="privacyNavID" href="#">Privacy</a></li>
                 <li><a class="navLinks" id="contactNavID" href="#">Contact</a></li>
+                <li><a class="navLinks" id="productNavID" href="#">Products</a></li>
             </ul>
         </nav>
 
@@ -25,18 +28,22 @@
                 
             </section>
 
-            <section id="articleSectionID">
+            <section class="articleContainer" id="articleSectionID">
                
             </section>
 
             <section id="contactSectionID">
-                <form action="https://formshow.systementor.se" method="post">
-                    <input type="text" name="Name" placeholder="Ditt namn">
-                    <input type="email" name="Email" placeholder="E-post">
-                    <input type="text" name="Subject" placeholder="Ärende">
-                    <textarea name="Message" rows="5" cols="30"></textarea>
-                    <input type="submit" value="Skicka">
+                <form id="formID" class="inputContainer" action="https://formshow.systementor.se" method="post">
+                    <input class="siteInputBar inputNameField" type="text" name="Name" placeholder="Ditt namn" required >
+                    <input class="siteInputBar inputEmailField" type="email" name="Email" placeholder="E-post" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+                    <input class="siteInputBar inputSubjectField" type="text" name="Subject" placeholder="Ärende" required>
+                    <textarea class="inputMessageField" name="Message" rows="5" cols="30"></textarea>
                 </form>
+                <input id="contactSubmitID" class="siteInputSubmit" type="submit" value="Skicka" form="formID">
+            </section>
+
+            <section id="productSectionID">
+                here be tables
             </section>
         </main>
 

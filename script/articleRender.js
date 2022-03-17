@@ -13,6 +13,11 @@ export const fetchData = () => {
             setVisible("startNavID")
         })
 }
+/*
+    typeof(elem[key]) == 'Object'
+        for(const key1 in elem[key])
+            elem[key] += addPAgeElement(...elem[key][key1])
+*/
 const addPageElement = (type, content) => {
     const elem = document.createElement(type);
     for (const key in content)
@@ -22,6 +27,8 @@ const addPageElement = (type, content) => {
             elem[key] = content[key];
     return elem;
 }
+
+console.log(typeof["hi", "i", "am"])
 
 export const renderArticle = id => {
     articleSectionID.innerHTML = '';
@@ -41,7 +48,7 @@ export const renderArticle = id => {
             [
                 'span',
                 {
-                    innerHTML: 'skriven av:'
+                    innerHTML: 'Skriven av:'
                 }
             ],
             [
@@ -53,7 +60,7 @@ export const renderArticle = id => {
             [
                 'p',
                 {
-                    innerHTML: testData.date.substring(0, testData.date.indexOf('T'))
+                    innerHTML: testData.date
                 }
             ]
         ].forEach( absDOM => articleSectionID.appendChild( addPageElement(...absDOM) ) )
@@ -108,7 +115,7 @@ export const renderArticleSummaries = () => {
                 [
                     'p',
                     {
-                        innerHTML: articleSummary.date.substring(0, articleSummary.date.indexOf('T')),
+                        innerHTML: articleSummary.date,
                         classList: 'articleSummaryDate'
                     }
                 ],

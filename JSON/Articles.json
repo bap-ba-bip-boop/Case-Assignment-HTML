@@ -1,7 +1,7 @@
 [
     {
         "id": 0,
-        "date": "2018-05-13T00:00:00-00:00", 
+        "date": "2018-05-13", 
         "title" : "",
         "author" : "",
         "summary": "",
@@ -109,18 +109,18 @@
     },
     {
         "id": 1,
-        "date": "2022-03-14T00:00:00-00:00", 
+        "date": "2022-03-14", 
         "title" : "Template Article",
         "author" : "Carl Bergqvist",
-        "summary": "this is a template article to display the things",
+        "summary": "This is a template article to display the things",
         "content" :[
             {
                 "type": "h3",
-                "text": "here is a title"
+                "text": "Here is a title"
             },
             {
                 "type": "p",
-                "text": "here goes a paragraph"
+                "text": "Here goes a paragraph"
             },
             {
                 "type": "ul",
@@ -146,10 +146,10 @@
     },
     {
         "id": 2,
-        "date": "2017-08-13T00:00:00-00:00", 
+        "date": "2017-08-13", 
         "title" : "Javascript is fun",
         "author" : "Javascript fan",
-        "summary": "a short article describing how Javascript is fun",
+        "summary": "A short article describing how Javascript is fun",
         "content" :[
             {
                 "type": "h3",
@@ -167,7 +167,7 @@
     },
     { 
         "id": 3,
-        "date": "2021-02-17T00:00:00-00:00", 
+        "date": "2021-02-17", 
         "title" : "Penguins",
         "author" : "Big Penguin fan",
         "summary": "An article describing penguins that is not plagarizing wikipedia",
@@ -183,15 +183,39 @@
             {
                 "type": "p",
                 "text": "The largest living species is the emperor penguin (Aptenodytes forsteri): on average, adults are about 1.1 m (3 ft 7 in) tall and weigh 35 kg (77 lb). The smallest penguin species is the little blue penguin (Eudyptula minor), also known as the fairy penguin, which stands around 33 cm (13 in) tall and weighs 1 kg (2.2 lb). In general today, larger penguins inhabit colder regions, and smaller penguins inhabit regions with temperate or tropical climates. Some prehistoric penguin species were enormous: as tall or heavy as an adult human. There was a great diversity of species in subantarctic regions, and at least one giant species in a region around 2,000 km south of the equator 35 mya, in a climate decidedly warmer than today."
+            },
+            {
+                "type": "h3",
+                "text": "Etymology"
+            },
+            {
+                "type": "p",
+                "text": "The word penguin first appears in literature at the end of the 16th century. When European explorers discovered what are today known as penguins in the Southern Hemisphere, they noticed their similar appearance to the great auk of the Northern Hemisphere, and named them after this bird, although they are not closely related."
+            },
+            {
+                "type": "p",
+                "text": "The etymology of the word penguin is still debated. The English word is not apparently of French, Breton or Spanish origin (the latter two are attributed to the French word pingouin), but first appears in English or Dutch."
+            },
+            {
+                "type": "p",
+                "text": "Some dictionaries suggest a derivation from Welsh pen, \"head\" and gwyn, \"white\", including the Oxford English Dictionary, the American Heritage Dictionary, the Century Dictionary and Merriam-Webster, on the basis that the name was originally applied to the great auk, either because it was found on White Head Island (Welsh: Pen Gwyn) in Newfoundland, or because it had white circles around its eyes (though the head was black)."
+            },
+            {
+                "type": "p",
+                "text": "An alternative etymology links the word to Latin pinguis, which means \"fat\" or \"oil\". Support for this etymology can be found in the alternative Germanic word for penguin, fettgans or \"fat-goose\", and the related Dutch word vetgans."
+            },
+            {
+                "type": "p",
+                "text": "Adult male penguins are called cocks, females are hens; a group of penguins on land is a waddle, and a group of penguins in the water is a raft."
             }
         ]
     },
     { 
         "id": 4,
-        "date": "2019-01-21T00:00:00-00:00", 
+        "date": "2019-01-21", 
         "title" : "Amazing new prices at Warmking",
         "author" : "PR person at Warmking",
-        "summary": "watch the new and amazing deals here on warmking",
+        "summary": "Watch the new and amazing deals here on warmking",
         "content" :[
             {
                 "type": "p",
@@ -201,7 +225,7 @@
     },
     { 
         "id": 5,
-        "date": "2020-06-15T00:00:00-00:00", 
+        "date": "2020-06-15", 
         "title" : "This is the Fifth Article",
         "author" : "Programer that ran out of imagination",
         "summary": "I ran out of imagination and needed a 5th article",
@@ -209,6 +233,29 @@
             {
                 "type": "p",
                 "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis consequat suscipit tellus, ut condimentum massa elementum quis. Vivamus consectetur accumsan odio finibus sodales. Ut pellentesque massa dolor, in condimentum nisi."
+            }
+        ]
+    },
+    { 
+        "id": 6,
+        "date": "2022-03-17", 
+        "title" : "To do List",
+        "author" : "Me",
+        "summary": "List of things I want to do before turning the case assignment in",
+        "content" :[
+            {
+                "type": "ul",
+                "items": [
+                    "I mobil(och på datorn kanske) ska man kunna klicka hela 'ArticleSummary' rutan",
+                    "fin indentation på början av alla paragrafer i artikel delen",
+                    "responsiv meny(hamburgare)",
+                    " O - validering i emailen",
+                    " O - rundade corners på boxes?",
+                    "js sida till databas.net bordet",
+                    "skriv om allt i react",
+                    "fixa variabel och ID namn",
+                    "mellanrum i contact mellan namn o email"
+                ]
             }
         ]
     }
