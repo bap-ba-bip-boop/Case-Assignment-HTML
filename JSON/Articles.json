@@ -239,7 +239,7 @@
     { 
         "id": 6,
         "date": "2022-03-17", 
-        "title" : "To do List",
+        "title" : "To do List och Edge cases",
         "author" : "Me",
         "summary": "List of things I want to do before turning the case assignment in",
         "content" :[
@@ -248,14 +248,19 @@
                 "items": [
                     "I mobil(och på datorn kanske) ska man kunna klicka hela 'ArticleSummary' rutan",
                     "fin indentation på början av alla paragrafer i artikel delen",
-                    "responsiv meny(hamburgare)",
+                    " O - responsiv meny(hamburgare)",
                     " O - validering i emailen",
                     " O - rundade corners på boxes?",
                     "js sida till databas.net bordet",
                     "skriv om allt i react",
                     "fixa variabel och ID namn",
-                    "mellanrum i contact mellan namn o email"
+                    "mellanrum i contact mellan namn o email",
+                    "bug där nav element pushas upp ifal artickeln är för stor"
                 ]
+            },
+            {
+                "type": "h2",
+                "text": "Edge Cases"
             }
         ]
     }
