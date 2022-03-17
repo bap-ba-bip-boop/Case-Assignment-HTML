@@ -161,7 +161,7 @@
             },
             {
                 "type": "ul",
-                "items": ["Named after Java", "comes with VS code", "does wierd things"]
+                "items": ["Named after Java", "comes with VS code", "does wierd things", "Everything moves towards the Event Horizon of React"]
             }
         ]
     },
@@ -252,10 +252,11 @@
                     " O - validering i emailen",
                     " O - rundade corners på boxes?",
                     "js sida till databas.net bordet",
-                    "skriv om allt i react",
                     "fixa variabel och ID namn",
                     "mellanrum i contact mellan namn o email",
-                    "bug där nav element pushas upp ifal artickeln är för stor"
+                    " O - bug där nav element pushas upp ifal artickeln är för stor",
+                    "Complete js-ification",
+                    "skriv om allt i react"
                 ]
             },
             {

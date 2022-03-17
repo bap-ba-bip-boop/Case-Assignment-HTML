@@ -6,6 +6,7 @@ const startNavID = document.getElementById("startNavID");
 const privacyNavID = document.getElementById("privacyNavID");
 const contactNavID = document.getElementById("contactNavID");
 const productNavID = document.getElementById("productNavID");
+const productSectionID = document.getElementById("productSectionID")
 
 const contactSectionID = document.getElementById("contactSectionID");
 
@@ -54,5 +55,7 @@ productNavID.addEventListener("click", ()=>{
     setVisible("productNavID")
 })
 
-startNavID.click()
+$(document).ready(function() {
+    $('#tableSectionID').DataTable();
+} );
 fetchData();
