@@ -5,6 +5,9 @@ let listOfArticles = [];
 
 const ArticlePath = './JSON/Articles.json';
 
+/**
+ * hämtar alla artiklar från JSON filen och sätter start sectionen synlig synlig
+ */
 export const fetchData = () => {
     fetch(ArticlePath)
         .then(Response => Response.json())
@@ -13,11 +16,19 @@ export const fetchData = () => {
             setVisible("startNavID")
         })
 }
+
 /*
     typeof(elem[key]) == 'Object'
         for(const key1 in elem[key])
             elem[key] += addPAgeElement(...elem[key][key1])
 */
+
+/**
+ * En funktion som skapar DOM objekt och fäster properties på den
+ * @param {string} type beskriver vilken typ som ska skapas
+ * @param {object} content allt innehåll som typen ska ha
+ * @returns det skapade DOM objektet
+ */
 const addPageElement = (type, content) => {
     const elem = document.createElement(type);
     for (const key in content)
@@ -28,6 +39,10 @@ const addPageElement = (type, content) => {
     return elem;
 }
 
+/**
+ * renderar en artikel med ett visst id
+ * @param {number} id artikelns id
+ */
 export const renderArticle = id => {
     articleSectionID.innerHTML = '';
     const testData = listOfArticles.find(article => article.id == id);
@@ -93,6 +108,9 @@ export const renderArticle = id => {
     });
 }
 
+/**
+ * renderar artikelsummaries åt startsidan
+ */
 export const renderArticleSummaries = () => {
     startSectionID.innerHTML = '';
     listOfArticles.map(
@@ -106,38 +124,38 @@ export const renderArticleSummaries = () => {
                 [
                     'h3',
                     {
-                        innerHTML: articleSummary.title,
-                        classList: 'articleSummaryHeader'
+                        classList: 'articleSummaryHeader',
+                        innerHTML: articleSummary.title
                     }
                 ],
                 [
                     'p',
                     {
-                        innerHTML: articleSummary.date,
-                        classList: 'articleSummaryDate'
+                        classList: 'articleSummaryDate',
+                        innerHTML: articleSummary.date
                     }
                 ],
                 [
                     'p',
                     {
-                        innerHTML: articleSummary.summary,
-                        classList: 'articleSummaryText'
+                        classList: 'articleSummaryText',
+                        innerHTML: articleSummary.summary
                     }
                 ],
                 [
                     'a',
                     {
-                        innerHTML: "Read More...",
-                        href: "#",
                         addEventListener:
-                            [
-                                "click",
-                                () => {
-                                    renderArticle(articleSummary.id)
-                                    setVisible("privacyNavID")
-                                }
-                            ],
-                        classList: 'articleSummaryLink'
+                        [
+                            "click",
+                            () => {
+                                renderArticle(articleSummary.id)
+                                setVisible("privacyNavID")
+                            }
+                        ],
+                        classList: 'articleSummaryLink',
+                        href: "#",
+                        innerHTML: "Read More..."
                     }
                 ]
             ].forEach( absDOM => container.appendChild( addPageElement(...absDOM) ) )

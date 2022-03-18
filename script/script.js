@@ -10,6 +10,10 @@ const productSectionID = document.getElementById("productSectionID")
 
 const contactSectionID = document.getElementById("contactSectionID");
 
+/**
+ * sätter en section med motsvarande id synligt. Gör ingenting ifall id är felaktigt
+ * @param {string} id id för den section som ska varaq synlig
+ */
 export const setVisible = id =>{
     if(id == "startNavID"){
         renderArticleSummaries()
@@ -42,6 +46,10 @@ startNavID.addEventListener("click", ()=>{
     setVisible("startNavID")
 })
 
+
+/**
+ * privacy policy sidan är en artikel
+ */
 privacyNavID.addEventListener("click", ()=>{
     renderArticle(0)
     setVisible("privacyNavID")
