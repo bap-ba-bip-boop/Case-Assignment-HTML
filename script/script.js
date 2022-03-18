@@ -55,7 +55,4 @@ productNavID.addEventListener("click", ()=>{
     setVisible("productNavID")
 })
 
-$(document).ready(function() {
-    $('#tableSectionID').DataTable();
-} );
 fetchData();
