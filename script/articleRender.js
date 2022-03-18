@@ -101,7 +101,7 @@ export const renderArticleSummaries = () => {
         if (articleSummary.id != 0)//title, date, summary, id
         {
             const container = document.createElement('div');
-            container.classList = 'articleSummaryContainer';
+            container.classList = 'roundedBox articleSummaryContainer';
             [
                 [
                     'h3',

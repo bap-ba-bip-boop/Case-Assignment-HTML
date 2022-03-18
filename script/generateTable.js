@@ -40,7 +40,6 @@ const generateProducts = () =>
 }
 
 let table = new DataTable(table_id, {
-    responsive: true,
     data: generateProducts(),
     columns: [
         { title: "Name" },

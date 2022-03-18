@@ -14,12 +14,12 @@
         </header>
 
         <nav class="siteNav">
-            <a class="hamburgerLink" id="HamburgerNavID" href="#"><span class="glyphicon">&#xe236;</span></a>
+            <a class="siteLink hamburgerLink" id="HamburgerNavID" href="#"><span class="glyphicon">Menu</span></a>
             <ul id="navListID">
-                <li><a class="navLinks" id="startNavID" href="#">Start</a></li>
-                <li><a class="navLinks" id="privacyNavID" href="#">Privacy</a></li>
-                <li><a class="navLinks" id="contactNavID" href="#">Contact</a></li>
-                <li><a class="navLinks" id="productNavID" href="#">Products</a></li>
+                <li><a class="siteLink navLinks" id="startNavID" href="#">Start</a></li>
+                <li><a class="siteLink navLinks" id="privacyNavID" href="#">Privacy</a></li>
+                <li><a class="siteLink navLinks" id="contactNavID" href="#">Contact</a></li>
+                <li><a class="siteLink navLinks" id="productNavID" href="#">Products</a></li>
             </ul>
         </nav>
 
@@ -35,16 +35,16 @@
 
             <section id="contactSectionID">
                 <form id="formID" class="inputContainer" action="https://formshow.systementor.se" method="post">
-                    <input class="siteInputBar inputNameField" type="text" name="Name" placeholder="Ditt namn" required >
-                    <input class="siteInputBar inputEmailField" type="email" name="Email" placeholder="E-post" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
-                    <input class="siteInputBar inputSubjectField" type="text" name="Subject" placeholder="Ärende" required>
-                    <textarea class="inputMessageField" name="Message" rows="5" cols="30"></textarea>
+                    <input class="roundedBox siteInputBar inputNameField" type="text" name="Name" placeholder="Ditt namn" required >
+                    <input class="roundedBox siteInputBar inputEmailField" type="email" name="Email" placeholder="E-post" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+                    <input class="roundedBox siteInputBar inputSubjectField" type="text" name="Subject" placeholder="Ärende" required>
+                    <textarea class="roundedBox inputMessageField" name="Message" rows="5" cols="30"></textarea>
                 </form>
-                <input id="contactSubmitID" class="siteInputSubmit" type="submit" value="Skicka" form="formID">
+                <input id="contactSubmitID" class="siteLink siteInputSubmit" type="submit" value="Skicka" form="formID">
             </section>
 
             <section id="productSectionID">
-                <table id="table_id" class="display">
+                <table id="table_id" class="display responsive nowrap" width="100%">
                     <thead>
                     </thead>
                     <tbody>

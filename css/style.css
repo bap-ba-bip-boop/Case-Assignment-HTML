@@ -1,10 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 @import './override.css';
 
+a{
+    text-decoration: none;
+}
+
 .siteContainer
 {
     align-items: center;
     display: grid;
+    color: purple;
     font-family: 'Ubuntu', sans-serif;
     grid-template-areas:
     "header nav"
@@ -14,77 +19,13 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 100px 10fr 50px;
     height: 100vh;
-    justify-content: center;
-    padding-left: 2vw;
+    padding: 0vh 2vw;
     width: 98vw;
-}
-
-/*site links*/
-.navLinks
-{
-    background-color: purple;
-    border-radius: 20px;
-    color: inherit;
-    font-size: 24px;
-    margin-left: 1vw;
-    padding: 1vh 2vw;
-    text-decoration: none;
-}
-
-.navLinks:hover
-{
-    color: white;
-    text-decoration: none;
-    filter: brightness(1.2);
-    transform: 0.2s;
-}
-
-.navLinks:active
-{
-    color: white;
-    text-decoration: none;
-    filter: brightness(0.8);
-    transform: 0.2s;
-}
-.navLinks:focus
-{
-    color: white;
-    text-decoration: none;
-}
-
-.hamburgerLink
-{
-    align-items: baseline;
-    display: none;
-    background-color: purple;
-    border-radius: 5px;
-    color: white;
-    font-size: 24px;
-    justify-content: center;
-    padding: 1vh 2vw;
-    text-decoration: none;
-}
-
-.hamburgerLink:hover
-{
-    color: white;
-    text-decoration: none;
-    filter: brightness(1.2);
-    transform: 0.2s;
-}
-
-.hamburgerLink:active
-{
-    color: white;
-    text-decoration: none;
-    filter: brightness(0.8);
-    transform: 0.2s;
 }
 
 /*Header And Nav*/
 .siteHeader
 {
-    color: purple;
     grid-area: header;
     margin-left: 2vw;
 }
@@ -96,137 +37,24 @@
 
 .siteNav ul
 {
-    color: white;
     display: flex;
     list-style-type: none;
 }
-
-/*Main*/
-.siteMain
+.navLinks
 {
-    grid-area: main;
-    height: 100%;
-}
-
-.siteMain h2
-{
-    color: purple;
-}
-
-.siteMain h3
-{
-    color: purple;
-}
-
-/*Article Styling*/
-.articleContainer
-{
-    width: 100%;
-}
-.articleContainer span
-{
-    padding-left: 1vw;
-}
-.articleContainer h3, .articleContainer h2
-{
-    padding-top: 1vh;
-    padding-left: 2vw;
-}
-
-/*Article Summaries*/
-.articleSummaryContainer
-{
-    border: 1px solid black;
-    border-radius: 5px;
-    display: block;
-    margin: 1vh 0vw;
-    padding: 1vh 2vw;
-    position: relative;
-    width: 100%;
-    z-index: auto;
-}
-.articleSummaryContainer:hover
-{
-    box-shadow: 0.25vw 0.25vh 5px gray;
-    transform: 0.2s;
-}
-.articleSummaryHeader
-{
-    display: inline;
-}
-.articleSummaryDate
-{
-    display: inline;
     margin-left: 1vw;
 }
-.articleSummaryLink
+.hamburgerLink
 {
-    color: purple;
-    display: block;
-    text-decoration: none;
-}
-.articleSummaryLink:hover
-{
-    color: purple;
-    text-decoration: none;
-}
-.articleSummaryLink:active
-{
-    color: purple;
-    text-decoration: none;
-}
-
-/*Contact forms*/
-.inputContainer
-{
-    display: grid;
-    grid-template-areas:
-    "name email"
-    "subject subject"
-    "message message"
-    ;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 3fr;
-    font-size: 24px;
-    width: 100%;
-}
-.siteInputBar
-{
-    border: 1px solid black;
+    display: none;
     border-radius: 5px;
-    font-size: inherit;
-    margin-bottom: 1vh;
-    padding: 1vh 2vw;
-}
-.inputNameField
-{
-    grid-area: name;
-}
-.inputEmailField
-{
-    grid-area: email;
-}
-.inputSubjectField
-{
-    grid-area: subject;
-}
-.inputMessageField
-{
-    font-family: 'Ubuntu', sans-serif;
-    font-size: inherit;
-    grid-area: message;
-    padding: 1vh 2vw;
-    resize: none;
+    justify-content: center;
 }
 .siteInputSubmit
 {
-    background-color: purple;
     border: none;
-    border-radius: 20px;
-    color: white;
     font-family: 'Ubuntu', sans-serif;
     font-size: 16px;
-    padding: 1vh 2vw;
 }
 .siteInputSubmit:hover
 {
@@ -240,24 +68,132 @@
     transform: 0.2s;
 }
 
+/*Main*/
+.siteMain
+{
+    color: initial;
+    grid-area: main;
+    height: 100%;
+    width: 100%;
+}
+
+/*Article Styling*/
+.articleContainer span
+{
+    padding-left: 1vw;
+}
+.articleContainer h3, .articleContainer h2
+{
+    color: purple;
+    padding-top: 1vh;
+    padding-left: 2vw;
+}
+
+/*Article Summaries*/
+.articleSummaryContainer:hover
+{
+    box-shadow: 0.25vw 0.25vh 5px gray;
+    transform: 0.2s;
+}
+.articleSummaryHeader
+{
+    color: inherit;
+    display: inline;
+}
+.articleSummaryDate
+{
+    color: black;
+    display: inline;
+    margin-left: 1vw;
+}
+.articleSummaryText
+{
+    color: black;
+}
+.articleSummaryLink
+{
+    color: inherit;
+    display: block;
+}
+.articleSummaryContainer
+{
+    color: purple;
+    display: block;
+    margin: 1vh 0vw;
+}
+/*Common Classes*/
+.roundedBox
+{
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 1vh 2vw;
+}
+.siteLink
+{
+    background-color: purple;
+    border-radius: 20px;
+    color: white;
+    font-size: 24px;
+    padding: 1vh 2vw;
+}
+.siteLink:hover{
+    filter: brightness(1.2);
+    transform: 0.2s;
+}
+.siteLink:active{
+    filter: brightness(0.8);
+    transform: 0.2s;
+}
+
+/*Contact forms*/
+.siteInputBar
+{
+    font-size: inherit;
+    margin-bottom: 1vh;
+}
+.inputMessageField
+{
+    font-family: inherit;
+    font-size: inherit;
+    grid-area: message;
+    resize: none;
+}
+.inputContainer
+{
+    display: grid;
+    grid-template-areas:
+    "name email"
+    "subject subject"
+    "message message"
+    ;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 3fr;
+    font-size: 24px;
+}
+.inputNameField
+{
+    grid-area: name;
+}
+.inputEmailField
+{
+    grid-area: email;
+}
+.inputSubjectField
+{
+    grid-area: subject;
+}
+
 /*Footer*/
 .siteFooter
 {
-    align-items: baseline;
-    color: purple;
     display: flex;
     font-weight: 600;
     font-style: italic;
     grid-area: footer;
     justify-content: center;
-    width: 100%;
 }
 
 @media screen and (max-width: 992px){
-    .siteMain
-    {
-        grid-area: main;
-    }
     .siteContainer
     {
         grid-template-areas:
@@ -279,26 +215,15 @@
         background-color: inherit;
         border-radius: inherit;
         display: block;
-        list-style-type: none;
         padding: 0vh 0vw;
-        text-align: none;
-        width: 100%;
-    }
-    .siteNav li
-    {
-        background-color: inherit;
-        border-radius: inherit;
     }
     .navLinks
     {
         border-radius: inherit;
-        color: white;
+        border-top: 1px solid rgb(53, 0, 53);
         display: block;
-        font-size: 24px;
         margin: 0vh 0vw;
         padding: 0vh 5vw;
-        text-decoration: none;
-        width: inherit;
     }
     .inputContainer
     {
@@ -311,8 +236,6 @@
         font-size: 16px;
         grid-template-rows: 1fr 1fr 1fr 3fr;
         grid-template-columns: 1fr;
-        width: 100%;
-        margin: 0;
     }
     .hamburgerLink
     {
