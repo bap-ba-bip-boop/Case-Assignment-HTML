@@ -36,16 +36,15 @@ const generateProducts = () =>
         listofProducts.push( [randomName(), getPrice(30, 4), getPrice(30, 4)] );
     }
 
-    console.log(listofProducts)
-
     return listofProducts;
 }
 
 let table = new DataTable(table_id, {
+    responsive: true,
     data: generateProducts(),
     columns: [
         { title: "Name" },
         { title: "Price" },
-        { title: "installation Price"}
+        { title: "Installation Price"}
     ]
 });

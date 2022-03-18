@@ -219,7 +219,7 @@
         "content" :[
             {
                 "type": "p",
-                "text": "dunno if I'll do the VG part"
+                "text": "did the VG Part"
             }
         ]
     },
@@ -251,10 +251,12 @@
                     " O - responsiv meny(hamburgare)",
                     " O - validering i emailen",
                     " O - rundade corners på boxes?",
-                    "js sida till databas.net bordet",
+                    " O - js sida till databas.net bordet",
                     "fixa variabel och ID namn",
                     "mellanrum i contact mellan namn o email",
                     " O - bug där nav element pushas upp ifal artickeln är för stor",
+                    "bryt ut lite table gen saker till JSON filer",
+                    "kommentera koden",
                     "Complete js-ification",
                     "skriv om allt i react"
                 ]

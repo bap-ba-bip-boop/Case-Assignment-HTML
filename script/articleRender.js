@@ -28,8 +28,6 @@ const addPageElement = (type, content) => {
     return elem;
 }
 
-console.log(typeof["hi", "i", "am"])
-
 export const renderArticle = id => {
     articleSectionID.innerHTML = '';
     const testData = listOfArticles.find(article => article.id == id);
