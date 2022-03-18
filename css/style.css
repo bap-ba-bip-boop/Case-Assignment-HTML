@@ -47,7 +47,6 @@ a{
 .hamburgerLink
 {
     display: none;
-    border-radius: 5px;
     justify-content: center;
 }
 .siteInputSubmit
@@ -78,6 +77,10 @@ a{
 }
 
 /*Article Styling*/
+.articleContainer p
+{
+    text-indent: 2vw;
+}
 .articleContainer span
 {
     padding-left: 1vw;
@@ -92,6 +95,7 @@ a{
 /*Article Summaries*/
 .articleSummaryContainer:hover
 {
+    color: purple;
     box-shadow: 0.25vw 0.25vh 5px gray;
     transform: 0.2s;
 }
@@ -240,6 +244,7 @@ a{
     .hamburgerLink
     {
         display: flex;
+        border-radius: 5px;
     }
     .siteInputSubmit{
         display: block;

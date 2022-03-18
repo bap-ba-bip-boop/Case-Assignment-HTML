@@ -23,6 +23,9 @@ const randomName = () =>
 {
     const places = 
     [
+        'Aarhus',
+        'Blekinge',
+        'Karlskrona',
         'Mora',
         'Värmland',
         'Jönköping',

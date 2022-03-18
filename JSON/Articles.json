@@ -246,8 +246,8 @@
             {
                 "type": "ul",
                 "items": [
-                    "I mobil(och på datorn kanske) ska man kunna klicka hela 'ArticleSummary' rutan",
-                    "fin indentation på början av alla paragrafer i artikel delen",
+                    " O - I mobil(och på datorn kanske) ska man kunna klicka hela 'ArticleSummary' rutan",
+                    " O - fin indentation på början av alla paragrafer i artikel delen",
                     " O - responsiv meny(hamburgare)",
                     " O - validering i emailen",
                     " O - rundade corners på boxes?",

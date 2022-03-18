@@ -1,13 +1,14 @@
 import {renderArticle, renderArticleSummaries, fetchData} from './articleRender.js';
 import {startSectionID, articleSectionID} from './CommonSections.js';
+import {navListID} from './HamburgerButton.js'
 
 
 const startNavID = document.getElementById("startNavID");
 const privacyNavID = document.getElementById("privacyNavID");
 const contactNavID = document.getElementById("contactNavID");
 const productNavID = document.getElementById("productNavID");
-const productSectionID = document.getElementById("productSectionID")
 
+const productSectionID = document.getElementById("productSectionID")
 const contactSectionID = document.getElementById("contactSectionID");
 
 /**

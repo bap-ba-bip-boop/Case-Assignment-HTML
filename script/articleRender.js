@@ -118,8 +118,14 @@ export const renderArticleSummaries = () => {
         ).forEach(articleSummary => {
         if (articleSummary.id != 0)//title, date, summary, id
         {
-            const container = document.createElement('div');
+            const container = document.createElement('a');
             container.classList = 'roundedBox articleSummaryContainer';
+            container.addEventListener("click",
+            () => {
+                renderArticle(articleSummary.id)
+                setVisible("privacyNavID")
+            });
+            container.href= "#";
             [
                 [
                     'h3',
@@ -145,16 +151,6 @@ export const renderArticleSummaries = () => {
                 [
                     'a',
                     {
-                        addEventListener:
-                        [
-                            "click",
-                            () => {
-                                renderArticle(articleSummary.id)
-                                setVisible("privacyNavID")
-                            }
-                        ],
-                        classList: 'articleSummaryLink',
-                        href: "#",
                         innerHTML: "Read More..."
                     }
                 ]

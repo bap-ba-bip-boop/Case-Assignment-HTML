@@ -1,6 +1,6 @@
 
 const HamburgerNavID = document.getElementById("HamburgerNavID")
-const navListID = document.getElementById("navListID");
+export const navListID = document.getElementById("navListID");
 
 /**
  * sätter en temporär property på navList när hamburger button clickas och tar bort den när listan ska visas igen
