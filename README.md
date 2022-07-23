@@ -1,4 +1,4 @@
-## Case-Assignment-HTML
+# Case-Assignment-HTML
 
 Final assignment for an Web basics course (HTML-CSS-Javascript)
 
