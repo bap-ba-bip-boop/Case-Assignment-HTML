@@ -6,7 +6,7 @@ Everything is hand coded. Also uses a table from datatable.net for a higher grad
 
 Keywords:
 
-- SPA(Single PAge application)
+- SPA(Single Page application)
 - DOM- Manipulation
 - Responsive menu
 - Semantic HTML
